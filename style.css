@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#note,
+#freq,
+#tuning {
+    font-size: 1.5em;
+    margin: 10px;
+}
