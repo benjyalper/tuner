@@ -3,18 +3,23 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Tuner</title>
+        <title>Chord Tuner</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="data:," />
     </head>
 
     <body>
-        <h1>Tuner</h1>
-        <div id="note">🎵 Note: --</div>
-        <div id="freq">📡 Frequency: -- Hz</div>
-        <div id="tuning">📍 Status: --</div>
-        <button onclick="startTuner()">Start Tuner</button>
+        <h1>🎸 Chord Recognizer</h1>
+        <button id="startBtn">▶️ Start Mic</button>
+        <button id="stopBtn">⏹️ Stop</button>
+        <div>— or —</div>
+        <input type="file" id="fileInput" accept=".mp3, .wav" />
 
-        <script src="tuner.js"></script>
+        <div id="notes">🎵 Notes: --</div>
+        <div id="chord">🎶 Chord: --</div>
+
+        <!-- ES-module tuner logic -->
+        <script type="module" src="chord-tuner.js"></script>
     </body>
 
 </html>
