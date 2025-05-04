@@ -3,9 +3,8 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Chord Tuner</title>
+        <title>Chord Tuner with Notation</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="data:," />
     </head>
 
     <body>
@@ -14,11 +13,13 @@
         <button id="stopBtn">⏹️ Stop</button>
         <div>— or —</div>
         <input type="file" id="fileInput" accept=".mp3, .wav" />
+        <button id="replayBtn" disabled>🔁 Replay File</button>
 
         <div id="notes">🎵 Notes: --</div>
         <div id="chord">🎶 Chord: --</div>
+        <div id="notation"></div>
 
-        <!-- ES-module tuner logic -->
+        <!-- Only your ES‐module tuner -->
         <script type="module" src="chord-tuner.js"></script>
     </body>
 
